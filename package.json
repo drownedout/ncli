@@ -1,12 +1,26 @@
 {
   "name": "apple_node_cli",
   "version": "1.0.0",
-  "description": "",
+  "author": "Daniel Donnelly",
+  "description": "Basic recreation of UNIX commands",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha \"./test/**/*.test.js\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "bin": {
+    "ncli": "./index.js"
+  },
+  "keywords": ["UNIX", "BASH", "node"],
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "mocha": "^7.1.0",
+    "sinon": "^9.0.1"
+  }
 }
